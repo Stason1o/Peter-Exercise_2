@@ -14,7 +14,6 @@ public class Main {
         System.out.println("previous." + carBrands.previous());
         carBrands.showAll();
 
-
         int[] array = {5,3,2,1,6,7,6,3,1,2,8};
         int[] array2 = {3,5,6,7};
         ArrayProcesser arrayProcesser = new ArrayProcesser();
