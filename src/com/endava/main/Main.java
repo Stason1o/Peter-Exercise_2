@@ -1,6 +1,5 @@
 package com.endava.main;
 
-import com.endava.enums.CarBrands;
 import com.endava.util.ArrayProcesser;
 
 /**
@@ -16,10 +15,10 @@ public class Main {
 
 
         int[] array = {5,3,2,1,6,7,6,3,1,2,8};
-        int[] array2 = {1,3,4,5,6,7};
+        int[] array2 = {3,5,6,7};
         ArrayProcesser arrayProcesser = new ArrayProcesser();
 
-        System.out.println(arrayProcesser.checkThirdTask(array));
-        System.out.println(arrayProcesser.checkThirdTask(array2));
+        System.out.println(arrayProcesser.checkFirstTask(array));
+        System.out.println(arrayProcesser.checkFirstTask(array2));
     }
 }

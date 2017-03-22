@@ -6,18 +6,16 @@ package com.endava.util;
 public class ArrayProcesser {
 
     public boolean checkFirstTask(int[] array){
-        boolean flag = false;
+        int check = 0;
         for(int i = 0; i < array.length; i++) {
-            if (array[i] != 1 || array[i] != 4) {
-                flag = true;
-            } else flag = false;
+            if (array[i] != 1 && array[i] != 4) {
+            } else check++;
         }
-        if(flag){
+        if(check == 0){
             return true;
-        } else if(flag == false){
+        } else {
             return false;
         }
-        return false;
     }
 
     public boolean checkSecondTask(int[] array){
