@@ -1,5 +1,6 @@
 package com.endava.main;
 
+import com.endava.enums.CarBrands;
 import com.endava.util.ArrayProcesser;
 
 /**
@@ -7,11 +8,11 @@ import com.endava.util.ArrayProcesser;
  */
 public class Main {
     public static void main(String[] args) {
-//        CarBrands carBrands = CarBrands.FERRARI;
-//        System.out.println("this." + carBrands);
-//        System.out.println("next." + carBrands.next());
-//        System.out.println("previous." + carBrands.previous());
-//        carBrands.showAll();
+        CarBrands carBrands = CarBrands.FERRARI;
+        System.out.println("this." + carBrands);
+        System.out.println("next." + carBrands.next());
+        System.out.println("previous." + carBrands.previous());
+        carBrands.showAll();
 
 
         int[] array = {5,3,2,1,6,7,6,3,1,2,8};
