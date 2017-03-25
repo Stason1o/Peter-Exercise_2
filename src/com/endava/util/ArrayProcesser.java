@@ -5,38 +5,34 @@ package com.endava.util;
  */
 public class ArrayProcesser {
 
-    public boolean checkFirstTask(int[] array){
-        int check = 0;
-        for(int i = 0; i < array.length; i++) {
+    public boolean checkIfNotContainsOneOrFour(int[] array) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] != 1 && array[i] != 4) {
-            } else check++;
-        }
-        if(check == 0){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public boolean checkSecondTask(int[] array){
-        int local = 0;
-        for(int i = 0; i < array.length; i++){
-            if(array[i] == 1){
-                local = i + 1;
+                continue;
+            } else {
+                return false;
             }
         }
-        for(int i = local; i < array.length; i++){
-            if(array[i] == 1 || array[i] == 2){
-                return true;
-            } else return false;
+        return true;
+    }
+
+    public boolean checkIfContainsOneOrTwoAfterFirstOccurenceOfOne(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] == 1) {
+                for (int j = i + 1; j < array.length; j++) {
+                    if (array[j] == 1 || array[j] == 2) {
+                        return true;
+                    }
+                }
+            }
         }
         return false;
     }
 
-    public int checkThirdTask(int[] array){
+    public int checkAmountOfEvenNumbers(int[] array) {
         int count = 0;
-        for(int i = 0; i < array.length; i++){
-            if(array[i] % 2 == 0){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
                 count++;
             }
         }
