@@ -14,11 +14,20 @@ public class Main {
         System.out.println("previous." + carBrands.previous());
         carBrands.showAll();
 
-        int[] array = {5,3,2,1,6,7,6,3,1,2,8};
-        int[] array2 = {3,5,6,7};
+        int[] array = {5, 3, 2, 1, 6, 7, 6, 3, 1, 2, 8};
+        int[] array2 = {3, 5, 6, 7, 4};
         ArrayProcesser arrayProcesser = new ArrayProcesser();
 
-        System.out.println(arrayProcesser.checkFirstTask(array));
-        System.out.println(arrayProcesser.checkFirstTask(array2));
+        System.out.println("-----------------Task 1-------------------");
+        System.out.println(arrayProcesser.checkIfNotContainsOneOrFour(array));
+        System.out.println(arrayProcesser.checkIfNotContainsOneOrFour(array2));
+
+        System.out.println("-----------------Task 2-------------------");
+        System.out.println(arrayProcesser.checkIfContainsOneOrTwoAfterFirstOccurenceOfOne(array));
+        System.out.println(arrayProcesser.checkIfContainsOneOrTwoAfterFirstOccurenceOfOne(array2));
+
+        System.out.println("-----------------Task 3-------------------");
+        System.out.println(arrayProcesser.checkAmountOfEvenNumbers(array));
+        System.out.println(arrayProcesser.checkAmountOfEvenNumbers(array2));
     }
 }
